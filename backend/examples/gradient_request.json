@@ -1,0 +1,21 @@
+{
+  "task_id": "task_gradient_001",
+  "task_type": "gradient",
+  "expression": "x**2 + y**2",
+  "vector_field": null,
+  "variables": ["x", "y"],
+  "parameters": {
+    "x_range": [-3, 3],
+    "y_range": [-3, 3],
+    "z_range": null,
+    "sample_density": 15,
+    "lower_bound": null,
+    "upper_bound": null,
+    "extra": null
+  },
+  "render_options": {
+    "render": false,
+    "quality": "low",
+    "format": "mp4"
+  }
+}

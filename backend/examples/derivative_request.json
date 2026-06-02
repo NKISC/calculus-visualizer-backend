@@ -1,0 +1,21 @@
+{
+  "task_id": "task_derivative_001",
+  "task_type": "derivative",
+  "expression": "x**3 + 2*x",
+  "vector_field": null,
+  "variables": ["x"],
+  "parameters": {
+    "x_range": [-5, 5],
+    "y_range": null,
+    "z_range": null,
+    "sample_density": 100,
+    "lower_bound": null,
+    "upper_bound": null,
+    "extra": null
+  },
+  "render_options": {
+    "render": false,
+    "quality": "low",
+    "format": "mp4"
+  }
+}

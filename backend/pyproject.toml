@@ -1,0 +1,9 @@
+[project]
+name = "calculus-visualizer-backend"
+version = "0.1.0"
+description = "Local FastAPI backend skeleton for Calculus Visualizer."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -1,0 +1,20 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Generated local outputs should not be committed.
+outputs/videos/*
+outputs/images/*
+outputs/data/*
+outputs/logs/*
+!outputs/videos/.gitkeep
+!outputs/images/.gitkeep
+!outputs/data/.gitkeep
+!outputs/logs/.gitkeep
+
+# Manim may create media/build folders during future rendering work.
+media/
+*.log

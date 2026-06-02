@@ -1,0 +1,21 @@
+{
+  "task_id": "task_curl_001",
+  "task_type": "curl",
+  "expression": null,
+  "vector_field": ["-y", "x", "0"],
+  "variables": ["x", "y", "z"],
+  "parameters": {
+    "x_range": [-3, 3],
+    "y_range": [-3, 3],
+    "z_range": [-3, 3],
+    "sample_density": 15,
+    "lower_bound": null,
+    "upper_bound": null,
+    "extra": null
+  },
+  "render_options": {
+    "render": false,
+    "quality": "low",
+    "format": "mp4"
+  }
+}

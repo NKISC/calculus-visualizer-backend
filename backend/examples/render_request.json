@@ -1,0 +1,15 @@
+{
+  "task_id": "task_001",
+  "task_type": "gradient",
+  "math_result": {
+    "latex": "x^{2} + y^{2}",
+    "result_text": "<2*x, 2*y>",
+    "result_latex": "\\langle 2x, 2y \\rangle",
+    "numeric_data": null
+  },
+  "render_options": {
+    "render": true,
+    "quality": "low",
+    "format": "mp4"
+  }
+}

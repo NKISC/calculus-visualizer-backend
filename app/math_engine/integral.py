@@ -1,4 +1,4 @@
-from backend.app.math_engine.parser import parse_expression
+from app.math_engine.parser import parse_expression
 from sympy import Symbol, Integral, oo
 import sympy as sp
 

@@ -1,18 +1,11 @@
-"""Expression parsing placeholder.
+# backend/app/math_engine/parser.py
 
-Future responsibility:
-- Convert frontend expression strings into safe SymPy expressions.
-- Validate allowed symbols and operations.
-- Normalize expression input before calculus operations.
-"""
-
-from typing import Any
+import sympy as sp
+from sympy.parsing.latex import parse_latex
 
 
-def parse_expression(expression: str, variables: list[str]) -> Any:
-    """Parse an expression string into a future symbolic representation.
-
-    TODO: Use SymPy parsing with validation once computation begins.
-    """
-
-    raise NotImplementedError("Expression parsing is not implemented yet.")
+def parse_expression(expression: str) -> sp.Expr:
+    try:
+        return parse_latex(expression)
+    except Exception as e:
+        raise ValueError(f"There is an expression error: {expression}, {e}")

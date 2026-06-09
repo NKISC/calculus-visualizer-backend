@@ -1,12 +1,21 @@
-"""Gradient computation placeholder."""
+from typing import Union
+from sympy import Symbol, Derivative
+from app.math_engine.parser import parse_expression
 
-from typing import Any
 
+def compute_gradient(expression: Union[str, list[str]], variables: list[str]) -> Union[list, list[list]]:
+    symbols = [Symbol(v) for v in variables]
 
-def compute_gradient(expression: Any, variables: list[str]) -> Any:
-    """Compute a future gradient vector for a scalar field.
+    if isinstance(expression, str):
+        f = parse_expression(expression)
+        return [Derivative(f, sym).doit() for sym in symbols]
 
-    TODO: Implement with SymPy once scalar field handling is added.
-    """
-
-    raise NotImplementedError("Gradient computation is not implemented yet.")
+    else:
+        result = []
+        i=0
+        for comp in expression:
+            f = parse_expression(comp)
+            row = Derivative(f, symbols[i]).doit()
+            i = i + 1
+            result.append(row)
+        return result
